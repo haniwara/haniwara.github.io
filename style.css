@@ -1,0 +1,129 @@
+/* 基本設定 */
+body {
+    font-family: 'Lato', 'Noto Sans JP', sans-serif; /* きれいなフォント指定 */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* コンテンツの幅を制限して中央寄せ */
+.container {
+    max-width: 800px; /* 幅を広げすぎないのが今の主流 */
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    min-height: 100vh; /* 画面いっぱいに白背景を表示 */
+    box-shadow: 0 0 20px rgba(0,0,0,0.05); /* うっすら影をつける */
+}
+
+/* リンクの色（知的な印象の濃い青） */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+a:hover {
+    text_decoration: underline;
+}
+
+/* ヘッダー */
+.profile-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+.profile-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+.profile-header .subtitle {
+    color: #666;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+.social-links {
+    margin-top: 15px;
+}
+
+/* セクション共通 */
+section {
+    margin-bottom: 50px;
+}
+h2 {
+    font-size: 1.5em;
+    border-left: 5px solid #0056b3; /* 左側にアクセントの線 */
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* 研究キーワード（タグ風） */
+.tags {
+    list-style: none;
+    padding: 0;
+}
+.tags li {
+    display: inline-block;
+    background: #eee;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* 論文リスト */
+.paper-list {
+    list-style: none;
+    padding: 0;
+}
+.paper-list li {
+    display: flex;
+    margin-bottom: 20px;
+}
+.paper-list .year {
+    font-weight: bold;
+    color: #888;
+    width: 60px; /* 年号の幅を固定 */
+    flex-shrink: 0;
+}
+.pdf-link {
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+/* 経歴リスト */
+.cv-list dt {
+    float: left;
+    width: 120px;
+    font-weight: bold;
+    color: #666;
+    clear: both;
+}
+.cv-list dd {
+    margin-left: 120px;
+    margin-bottom: 10px;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #999;
+    padding-bottom: 20px;
+}
+
+/* スマホ対応（画面が狭い時） */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    .cv-list dt {
+        float: none;
+        width: auto;
+    }
+    .cv-list dd {
+        margin-left: 0;
+    }
+}
