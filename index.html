@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naoki Takada | Researcher</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- アイコン用フォント (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ナビゲーションバー -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Naoki Takada</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-item"><span class="lang-en">About</span><span class="lang-jp">自己紹介</span></a>
+                <a href="#publications" class="nav-item"><span class="lang-en">Publications</span><span class="lang-jp">業績</span></a>
+                <a href="#cv" class="nav-item"><span class="lang-en">CV</span><span class="lang-jp">経歴</span></a>
+                <!-- 言語切り替えボタン -->
+                <button id="lang-toggle" class="lang-btn">
+                    <i class="fa-solid fa-globe"></i> <span id="lang-label">JP</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- ヘッダー（プロフィール） -->
+        <header class="profile-section" id="about">
+            <div class="profile-text">
+                <h1 class="name">
+                    <span class="lang-en">Naoki Takada</span>
+                    <span class="lang-jp">高田 尚輝</span>
+                </h1>
+                <p class="affiliation">
+                    <span class="lang-en">M1 Student at Yokohama National University</span>
+                    <span class="lang-jp">横浜国立大学 大学院 修士1年</span>
+                    <br>
+                    <a href="https://forest.ynu.ac.jp/Forest/ja/index.html" target="_blank" class="lab-link">
+                        <span class="lang-en">Mori Laboratory</span><span class="lang-jp">森研究室</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </p>
+                
+                <!-- 連絡先・SNS -->
+                <div class="contact-links">
+                    <a href="mailto:nnntakada@gmail.com" class="btn btn-primary">
+                        <i class="fa-regular fa-envelope"></i> Email (Gmail)
+                    </a>
+                    <a href="mailto:takada-naoki-xs@ynu.jp" class="btn btn-outline">
+                        <i class="fa-solid fa-envelope-open-text"></i> Email (Univ)
+                    </a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/haniwara" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/haniwara_" target="_blank" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="disabled" title="Google Scholar (Coming Soon)"><i class="fa-brands fa-google-scholar"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- 興味分野 -->
+        <section class="section">
+            <h2><span class="lang-en">Research Interests</span><span class="lang-jp">研究興味</span></h2>
+            <div class="tags">
+                <span class="tag">Natural Language Processing</span>
+                <span class="tag">Dialogue Disentanglement</span>
+                <span class="tag">Multi-party Chat</span>
+                <span class="tag">Large Language Model</span>
+            </div>
+        </section>
+
+        <!-- 論文 -->
+        <section class="section" id="publications">
+            <h2><span class="lang-en">Publications</span><span class="lang-jp">論文・発表</span></h2>
+            
+            <h3>International Conferences / Workshops</h3>
+            <ul class="paper-list">
+                <li>
+                    <div class="paper-content">
+                        <span class="paper-title">Rethinking Dialogue Disentanglement for LLMs via Dialogue-Level Assignment and Subsequent Context</span>
+                        <br>
+                        <span class="paper-authors"><u>Naoki Takada</u>, Tatsunori Mori</span>
+                        <br>
+                        <span class="paper-venue">
+                            Accepted at <strong>LaCATODA 2026</strong> (AAAI 2026 Workshop)
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+            <h3>Awards</h3>
+            <ul class="paper-list">
+                <li>
+                    <div class="paper-content">
+                        <span class="paper-title">
+                            <span class="lang-en">Hackathon Award at YANS 2025</span>
+                            <span class="lang-jp">YANS 2025 ハッカソン 受賞</span>
+                        </span>
+                        <br>
+                        <a href="https://www.ynu.ac.jp/hus/envk/34234/detail.html" target="_blank" class="link-arrow">
+                            <span class="lang-en">News Release</span><span class="lang-jp">詳細リンク</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 経歴 -->
+        <section class="section" id="cv">
+            <h2><span class="lang-en">Education & Experience</span><span class="lang-jp">学歴・経歴</span></h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Current</div>
+                    <div class="timeline-content">
+                        <strong><span class="lang-en">M1, Master of Engineering</span><span class="lang-jp">修士課程 (M1)</span></strong>
+                        <p>
+                            <span class="lang-en">Yokohama National University</span>
+                            <span class="lang-jp">横浜国立大学 大学院</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Mar. 2025</div>
+                    <div class="timeline-content">
+                        <strong><span class="lang-en">B.S. in Science and Engineering</span><span class="lang-jp">理工学部 卒業</span></strong>
+                        <p>
+                            <span class="lang-en">Yokohama National University</span>
+                            <span class="lang-jp">横浜国立大学</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Mar. 2024</div>
+                    <div class="timeline-content">
+                        <strong><span class="lang-en">High School Diploma</span><span class="lang-jp">高等学校 卒業</span></strong>
+                        <p>
+                            <span class="lang-en">Yokohama Suiran High School</span>
+                            <span class="lang-jp">横浜翠嵐高校</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h3><span class="lang-en">Skills & Certificates</span><span class="lang-jp">スキル・資格</span></h3>
+            <ul class="skill-list">
+                <li>TOEIC L&R: <strong>835</strong></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Naoki Takada.</p>
+    </footer>
+
+    <!-- JavaScript読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>

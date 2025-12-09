@@ -1,0 +1,289 @@
+/* ベース設定 */
+:root {
+    --primary-color: #0056b3; /* 知的な青 */
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --light-gray: #f4f4f4;
+    --border-color: #e0e0e0;
+}
+
+body {
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9fb;
+}
+
+/* ナビゲーションバー */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 20px;
+}
+
+.nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+.nav-item:hover {
+    color: var(--primary-color);
+}
+
+/* 言語切り替えボタン */
+.lang-btn {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s;
+}
+.lang-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* メインコンテナ */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background: var(--bg-color);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    border-radius: 8px;
+    padding-bottom: 40px;
+}
+
+/* プロフィールヘッダー */
+.profile-section {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 40px;
+}
+
+.name {
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.02em;
+}
+
+.affiliation {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+.lab-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.lab-link:hover {
+    text-decoration: underline;
+}
+
+/* 連絡先・SNSボタン */
+.contact-links {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.1s;
+}
+.btn:active {
+    transform: scale(0.98);
+}
+.btn-primary {
+    background-color: var(--text-color);
+    color: white;
+}
+.btn-outline {
+    border: 1px solid #ccc;
+    color: var(--text-color);
+}
+.btn:hover {
+    opacity: 0.9;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.5rem;
+}
+.social-icons a {
+    color: #777;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+.social-icons .disabled {
+    color: #ddd;
+    pointer-events: none;
+}
+
+/* セクション共通 */
+.section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--light-gray);
+    display: inline-block;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* タグ */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tag {
+    background: #eef4fa;
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* 論文リスト */
+.paper-list {
+    list-style: none;
+    padding: 0;
+}
+.paper-list li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: start;
+}
+.paper-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    display: block;
+    margin-bottom: 4px;
+}
+.paper-venue {
+    color: #666;
+    font-size: 0.95rem;
+    display: block;
+    margin-top: 4px;
+}
+.link-arrow {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.link-arrow:hover {
+    text-decoration: underline;
+}
+
+/* タイムライン（経歴） */
+.timeline {
+    border-left: 2px solid var(--light-gray);
+    padding-left: 20px;
+    margin-left: 5px;
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+.timeline-date {
+    font-size: 0.85rem;
+    color: #888;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.timeline-content p {
+    margin: 0;
+    color: #555;
+}
+
+/* 言語切り替え用の初期設定 */
+.lang-jp {
+    display: none; /* 初期状態は日本語を非表示 */
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #999;
+    font-size: 0.8rem;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+    .name { font-size: 2rem; }
+    .nav-links { gap: 10px; }
+    .nav-item span { font-size: 0.85rem; }
+    .nav-item { display: none; } /* スマホではメニューを省略しボタンだけ残す簡易対応 */
+    .nav-links { width: 100%; justify-content: flex-end; }
+    .lang-btn { display: flex; }
+    /* スマホでもメニューを出したい場合はJSが必要ですが、今回はシンプル化のため言語切替優先 */
+}
