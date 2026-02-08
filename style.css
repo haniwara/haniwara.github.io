@@ -200,7 +200,7 @@ button:focus-visible {
 }
 
 .contact-email {
-    color: var(--muted);
+    color: var(--link-blue);
     font-size: 0.95rem;
     text-decoration: none;
     font-weight: 500;
@@ -352,7 +352,7 @@ h3 {
     font-weight: 700;
     font-size: 1.02rem;
     display: block;
-    margin-bottom: 4px;
+    margin: 0;
 }
 
 .paper-title-link {
@@ -368,20 +368,26 @@ h3 {
     color: var(--muted);
     font-size: 0.95rem;
     display: block;
-    margin-bottom: 8px;
+    margin: 0;
 }
 
 .paper-authors {
     color: var(--muted);
     font-size: 0.95rem;
     display: block;
+    margin: 0;
 }
 
 .link-arrow {
-    color: var(--accent);
+    color: var(--link-blue);
     text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 1.02rem;
+    font-weight: 700;
+}
+
+.award-link {
+    display: block;
+    margin-top: 0;
 }
 
 .link-arrow:hover {
@@ -428,6 +434,16 @@ h3 {
 .timeline-content p {
     margin: 0;
     color: var(--muted);
+}
+
+.timeline-affiliation {
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 6px;
+}
+
+.timeline-detail {
+    font-weight: 500;
 }
 
 /* Skills list */
