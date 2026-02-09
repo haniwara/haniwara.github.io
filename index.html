@@ -5,31 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naoki Takada | Researcher</title>
     <link rel="stylesheet" href="style.css">
-    <!-- アイコン用フォント: Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
 </head>
 <body>
 
-    <!-- ナビゲーションバー -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">Naoki Takada</a>
             <div class="nav-links">
-                <a href="#about" class="nav-item"><span class="lang-en">About</span><span class="lang-jp">自己紹介</span></a>
-                <a href="#cv" class="nav-item"><span class="lang-en">CV</span><span class="lang-jp">経歴</span></a>
+                <a href="#cv" class="nav-item"><span class="lang-en">Education</span><span class="lang-jp">学歴</span></a>
                 <a href="#publications" class="nav-item"><span class="lang-en">Publications</span><span class="lang-jp">業績</span></a>
-                <!-- 言語切り替えボタン -->
+                <a href="#awards" class="nav-item"><span class="lang-en">Awards</span><span class="lang-jp">受賞</span></a>
+                <a href="#skills" class="nav-item"><span class="lang-en">Certificates</span><span class="lang-jp">資格</span></a>
                 <button id="lang-toggle" class="lang-btn">
-                    <i class="fa-solid fa-globe"></i> <span id="lang-label">JP</span>
+                    <span id="lang-label">日本語</span>
                 </button>
             </div>
         </div>
     </nav>
 
     <div class="container">
-        <!-- ヘッダー（プロフィール） -->
         <header class="profile-section" id="about">
             <div class="profile-text">
                 <h1 class="name">
@@ -37,30 +33,32 @@
                     <span class="lang-jp">高田 尚輝</span>
                 </h1>
                 <p class="affiliation">
-                    <span class="lang-en">First-year Master's student at Yokohama National University</span>
+                    <span class="lang-en">1st-year Master's student at Yokohama National University</span>
                     <span class="lang-jp">横浜国立大学 大学院 修士1年</span>
                     <br>
                     <a href="https://forest.ynu.ac.jp/Forest/ja/index.html" target="_blank" class="lab-link" rel="noopener">
-                        <span class="lang-en">Mori Laboratory</span><span class="lang-jp">森研究室</span>
+                        <span class="lang-en">Mori Lab</span><span class="lang-jp">森研究室</span>
                     </a>
                 </p>
-                
-                <!-- 連絡先・SNS -->
+
                 <div class="contact-links">
-                    <div><a href="mailto:nnntakada@gmail.com" class="contact-email">nnntakada@gmail.com</a></div>
-                    <div><a href="mailto:takada-naoki-xs@ynu.jp" class="contact-email">takada-naoki-xs@ynu.jp</a></div>
+                    <div><span class="lang-en">Main:</span><span class="lang-jp">メイン:</span> <a href="mailto:nnntakada@gmail.com" class="contact-email">nnntakada@gmail.com</a></div>
+                    <div><span class="lang-en">Research:</span><span class="lang-jp">研究:</span> <a href="mailto:takada-naoki-xs@ynu.jp" class="contact-email">takada-naoki-xs@ynu.jp</a></div>
                 </div>
                 <div class="social-icons">
-                    <a href="https://github.com/haniwara" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://x.com/haniwara_" target="_blank" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#" class="disabled" title="Google Scholar - Coming Soon"><i class="fa-brands fa-google-scholar"></i></a>
+                    <a href="https://github.com/haniwara" target="_blank" title="GitHub" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/haniwara_" target="_blank" title="X / Twitter" rel="noopener" aria-label="X">
+                        <svg class="x-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26L22.82 21.75h-6.653l-5.213-6.817L4.99 21.75H1.68l7.73-8.835L1.25 2.25h6.822l4.713 6.231zM17.083 19.77h1.833L7.083 4.126H5.116z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="disabled" title="Google Scholar - Coming Soon"><i class="ai ai-google-scholar"></i></a>
                 </div>
             </div>
         </header>
 
-        <!-- 興味分野 -->
         <section class="section">
-            <h2><span class="lang-en">Research Interests</span><span class="lang-jp">研究興味</span></h2>
+            <h2><span class="lang-en">Research Interests</span><span class="lang-jp">研究内容</span></h2>
             <div class="tags">
                 <span class="tag">Natural Language Processing</span>
                 <span class="tag">Dialogue Disentanglement</span>
@@ -69,10 +67,9 @@
             </div>
         </section>
 
-        <!-- 経歴 -->
         <section class="section" id="cv">
             <h2><span class="lang-en">Education</span><span class="lang-jp">学歴</span></h2>
-            
+
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-date">
@@ -101,7 +98,7 @@
                             <span class="lang-jp">横浜国立大学</span>
                         </p>
                         <p class="timeline-detail">
-                            <span class="lang-en">B.Eng.</span>
+                            <span class="lang-en">Bachelor’s Degree</span>
                             <span class="lang-jp">学士（工学）</span>
                         </p>
                     </div>
@@ -125,10 +122,9 @@
             </div>
         </section>
 
-        <!-- 論文 -->
         <section class="section" id="publications">
-            <h2><span class="lang-en">Publications</span><span class="lang-jp">論文・発表</span></h2>
-            
+            <h2><span class="lang-en">Publications</span><span class="lang-jp">業績</span></h2>
+
             <h3><span class="lang-en">Peer-Reviewed</span><span class="lang-jp">査読付き</span></h3>
             <ul class="paper-list">
                 <li>
@@ -137,7 +133,7 @@
                             <span class="lang-en">LaCATODA 2026, AAAI 2026 Workshop</span>
                             <span class="lang-jp">LaCATODA 2026, AAAI 2026 Workshop</span>
                         </span>
-<span class="paper-title">
+                        <span class="paper-title">
                             <span class="lang-en">
                                 <a class="paper-title-link" href="https://sites.google.com/view/lacatoda2026" target="_blank" rel="noopener">
                                     Rethinking Dialogue Disentanglement for LLMs via Dialogue-Level Assignment and Subsequent Context
@@ -149,7 +145,7 @@
                                 </a>
                             </span>
                         </span>
-<span class="paper-authors">
+                        <span class="paper-authors">
                             <span class="lang-en"><u>Naoki Takada</u>, Tatsunori Mori</span>
                             <span class="lang-jp"><u>Naoki Takada</u>, Tatsunori Mori</span>
                         </span>
@@ -162,8 +158,8 @@
                 <li>
                     <div class="paper-content">
                         <span class="paper-venue">
-                            <span class="lang-en">言語処理学会第32回年次大会(NLP2026)</span>
-                            <span class="lang-jp">言語処理学会第32回年次大会(NLP2026)</span>
+                            <span class="lang-en">第32回言語処理学会年次大会(NLP2026)</span>
+                            <span class="lang-jp">第32回言語処理学会年次大会(NLP2026)</span>
                         </span>
                         <span class="paper-title">
                             <span class="lang-en">
@@ -186,8 +182,8 @@
                 <li>
                     <div class="paper-content">
                         <span class="paper-venue">
-                            <span class="lang-en">言語処理学会第32回年次大会(NLP2026)</span>
-                            <span class="lang-jp">言語処理学会第32回年次大会(NLP2026)</span>
+                            <span class="lang-en">第32回言語処理学会年次大会(NLP2026)</span>
+                            <span class="lang-jp">第32回言語処理学会年次大会(NLP2026)</span>
                         </span>
                         <span class="paper-title">
                             <span class="lang-en">
@@ -210,16 +206,12 @@
                 <li>
                     <div class="paper-content">
                         <span class="paper-venue">
-                            <span class="lang-en">NLP若手の会 第20回シンポジウム (YANS2025)</span>
-                            <span class="lang-jp">NLP若手の会 第20回シンポジウム (YANS2025)</span>
+                            <span class="lang-en">NLP若手の会第20回シンポジウム(YANS2025)</span>
+                            <span class="lang-jp">NLP若手の会第20回シンポジウム(YANS2025)</span>
                         </span>
                         <span class="paper-title">
-                            <span class="lang-en">
-                                チャット対話分離における注釈付け指示書の検討
-                            </span>
-                            <span class="lang-jp">
-                                チャット対話分離における注釈付け指示書の検討
-                            </span>
+                            <span class="lang-en">チャット対話分離における注釈付け指示書の検討</span>
+                            <span class="lang-jp">チャット対話分離における注釈付け指示書の検討</span>
                         </span>
                         <span class="paper-authors">
                             <span class="lang-en"><u>高田 尚輝</u>, 森 辰則 </span>
@@ -240,8 +232,8 @@
                             <span class="lang-jp">2025年9月</span>
                         </span>
                         <span class="paper-title">
-                            <span class="lang-en">NLP Young Researchers Symposium 20th (YANS2025) Interdisciplinary Hackathon</span>
-                            <span class="lang-jp">NLP若手の会 第20回シンポジウム (YANS2025) 分野交流ハッカソン</span>
+                            <span class="lang-en">NLP若手の会第20回シンポジウム(YANS2025) 分野交流ハッカソン</span>
+                            <span class="lang-jp">NLP若手の会第20回シンポジウム(YANS2025) 分野交流ハッカソン</span>
                         </span>
                         <a href="https://www.ynu.ac.jp/hus/envk/34234/detail.html" target="_blank" class="link-arrow award-link" rel="noopener">
                             <span class="lang-en">DPO Division Excellence Award</span><span class="lang-jp">DPO部門 優秀賞</span>
@@ -260,15 +252,14 @@
                     <strong>835</strong>
                 </li>
                 <li>
-                    <span class="lang-en">JDLA E-Certificate 2025 Second Exam</span>
-                    <span class="lang-jp">E資格（2025年度 第2回）</span>
+                    <span class="lang-en">JDLA E-Certificate (JDLA Deep Learning for ENGINEER 2025 #2)</span>
+                    <span class="lang-jp">E資格 (JDLA Deep Learning for ENGINEER 2025 #2)</span>
                 </li>
             </ul>
         </section>
 
     </div>
 
-    <!-- JavaScript読み込み -->
     <script src="script.js"></script>
 </body>
 </html>

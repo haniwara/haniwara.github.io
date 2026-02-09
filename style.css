@@ -128,8 +128,8 @@ button:focus-visible {
 
 /* Language toggle */
 .lang-btn {
-    background: var(--surface);
-    border: 1px solid var(--border);
+    background: rgba(15, 118, 110, 0.12);
+    border: 1px solid rgba(15, 118, 110, 0.35);
     border-radius: 999px;
     padding: 6px 14px;
     cursor: pointer;
@@ -265,6 +265,13 @@ button:focus-visible {
     transition: all 0.3s ease;
 }
 
+.social-icons .x-icon {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    display: block;
+}
+
 .social-icons a:hover {
     color: var(--accent);
     border-color: rgba(15, 118, 110, 0.4);
@@ -378,6 +385,11 @@ h3 {
     margin: 0;
 }
 
+.author-affiliation {
+    color: #111111;
+    font-weight: 600;
+}
+
 .link-arrow {
     color: var(--link-blue);
     text-decoration: none;
@@ -438,7 +450,7 @@ h3 {
 
 .timeline-affiliation {
     font-weight: 700;
-    color: var(--ink);
+    color: #000000;
     margin-bottom: 6px;
 }
 

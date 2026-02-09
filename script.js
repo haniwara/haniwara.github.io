@@ -20,12 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // 日本語モード
             enElements.forEach(el => el.style.display = 'none');
             jpElements.forEach(el => el.style.display = 'inline');
-            langLabel.textContent = 'EN'; // ボタンの文字は「英語に戻す」という意味でEN
+            langLabel.textContent = 'English'; // ボタンの文字は「英語に戻す」という意味でEN
         } else {
             // 英語モード
             enElements.forEach(el => el.style.display = 'inline');
             jpElements.forEach(el => el.style.display = 'none');
-            langLabel.textContent = 'JP'; // ボタンの文字は「日本語にする」という意味でJP
+            langLabel.textContent = '日本語'; // ボタンの文字は「日本語にする」という意味でJP
         }
     }
 });
