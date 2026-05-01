@@ -199,12 +199,19 @@ html[lang="ja"] .jp-affiliation-spacer {
     text-decoration-color: currentColor;
 }
 
-.contact-links {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+.profile-links-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
-    max-width: 760px;
     margin: 0 0 24px;
+}
+
+.contact-links {
+    display: inline-grid;
+    grid-template-columns: max-content;
+    max-width: 100%;
+    margin: 0;
 }
 
 .contact-links > div {
@@ -215,10 +222,15 @@ html[lang="ja"] .jp-affiliation-spacer {
     border-radius: var(--radius);
     color: var(--muted);
     font-size: 0.95rem;
+    white-space: nowrap;
 }
 
 .contact-links a {
     overflow-wrap: anywhere;
+}
+
+.mail-icon {
+    color: var(--ink);
 }
 
 .social-icons {
@@ -492,7 +504,6 @@ footer {
         margin-bottom: 30px;
     }
 
-    .contact-links,
     .section,
     .timeline-item {
         grid-template-columns: 1fr;
@@ -549,5 +560,6 @@ footer {
 
     .contact-links > div {
         padding: 11px 12px;
+        white-space: normal;
     }
 }
