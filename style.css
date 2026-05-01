@@ -218,8 +218,8 @@ html[lang="ja"] .jp-affiliation-spacer {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    padding-left: 10px;
-    border-left: 3px solid var(--line-strong);
+    padding-left: 20px;
+    border-left: 2px solid var(--line);
 }
 
 .contact-links {
