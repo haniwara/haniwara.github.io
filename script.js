@@ -31,5 +31,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    setLanguage("en");
+    setLanguage("jp");
 });
