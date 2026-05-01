@@ -34,14 +34,14 @@
             },
             "knowsAbout": [
                 "Natural Language Processing",
-                "Dialogue Disentanglement",
+                "Large Language Model",
                 "Multi-party Chat",
-                "Large Language Model"
+                "Knowledge Extraction"
             ],
             "sameAs": [
+                "https://scholar.google.com/citations?hl=en&user=uFL8hwkAAAAJ",
                 "https://github.com/haniwara",
-                "https://x.com/haniwara_",
-                "https://scholar.google.com/citations?hl=en&user=uFL8hwkAAAAJ"
+                "https://www.linkedin.com/in/haniwara/"
             ]
         }
     </script>
@@ -59,9 +59,10 @@
                 <a href="#publications" class="nav-item"><span class="lang-en">Publications</span><span class="lang-jp">業績</span></a>
                 <a href="#awards" class="nav-item"><span class="lang-en">Awards</span><span class="lang-jp">受賞</span></a>
                 <a href="#skills" class="nav-item"><span class="lang-en">Certificates</span><span class="lang-jp">資格</span></a>
-                <button id="lang-toggle" class="lang-btn">
-                    <span id="lang-label">日本語</span>
-                </button>
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button type="button" class="lang-option is-active" data-lang="en" aria-pressed="true">English</button>
+                    <button type="button" class="lang-option" data-lang="jp" aria-pressed="false">日本語</button>
+                </div>
             </div>
         </div>
     </nav>
@@ -74,25 +75,24 @@
                     <span class="lang-jp">高田尚輝</span>
                 </h1>
                 <p class="affiliation">
-                    <span class="lang-en">1st-year Master's student at Yokohama National University</span>
-                    <span class="lang-jp">横浜国立大学 大学院 修士1年</span>
-                    <br>
-                    <a href="https://forest.ynu.ac.jp/Forest/ja/index.html" target="_blank" class="lab-link" rel="noopener">
-                        <span class="lang-en">Mori Lab</span><span class="lang-jp">森研究室</span>
+                    <span class="lang-en">Second-year Master’s student at </span>
+                    <span class="lang-jp">横浜国立大学 大学院 環境情報学府 </span>
+                    <a href="https://forest.ynu.ac.jp/Forest/en/index.html" target="_blank" class="lab-link lang-en" rel="noopener">Mori Lab</a>
+                    <a href="https://forest.ynu.ac.jp/Forest/ja/index.html" target="_blank" class="lab-link lang-jp" rel="noopener">森研究室
+                        
                     </a>
+                    <span class="lang-en">, Graduate School of Environment and Information Sciences, Yokohama National University</span>
+                    <span class="lang-jp"> 修士2年</span>
                 </p>
+                <span class="jp-affiliation-spacer" aria-hidden="true"></span>
                 <div class="contact-links">
                     <div><span class="lang-en">Main:</span><span class="lang-jp">メイン:</span> <a href="mailto:nnntakada@gmail.com" class="contact-email">nnntakada@gmail.com</a></div>
                     <div><span class="lang-en">Research:</span><span class="lang-jp">研究:</span> <a href="mailto:takada-naoki-xs@ynu.jp" class="contact-email">takada-naoki-xs@ynu.jp</a></div>
                 </div>
                 <div class="social-icons">
-                    <a href="https://github.com/haniwara" target="_blank" title="GitHub" rel="noopener"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://x.com/haniwara_" target="_blank" title="X / Twitter" rel="noopener" aria-label="X">
-                        <svg class="x-icon" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M18.244 2.25h3.308l-7.227 8.26L22.82 21.75h-6.653l-5.213-6.817L4.99 21.75H1.68l7.73-8.835L1.25 2.25h6.822l4.713 6.231zM17.083 19.77h1.833L7.083 4.126H5.116z"></path>
-                        </svg>
-                    </a>
                     <a href="https://scholar.google.com/citations?hl=en&user=uFL8hwkAAAAJ" target="_blank" title="Google Scholar" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                    <a href="https://github.com/haniwara" target="_blank" title="GitHub" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/haniwara/" target="_blank" title="LinkedIn" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </header>
@@ -100,10 +100,11 @@
         <section class="section">
             <h2><span class="lang-en">Research Interests</span><span class="lang-jp">研究内容</span></h2>
             <div class="tags">
-                <span class="tag">Natural Language Processing</span>
-                <span class="tag">Dialogue Disentanglement</span>
-                <span class="tag">Multi-party Chat</span>
-                <span class="tag">Large Language Model</span>
+                <span class="tag"><span class="lang-en">Natural Language Processing</span><span class="lang-jp">自然言語処理</span></span>
+                <span class="tag"><span class="lang-en">Large Language Model</span><span class="lang-jp">大規模言語モデル</span></span>
+                <span class="tag-break" aria-hidden="true"></span>
+                <span class="tag"><span class="lang-en">Multi-party Dialogue</span><span class="lang-jp">多人数対話</span></span>
+                <span class="tag"><span class="lang-en">Knowledge Extraction</span><span class="lang-jp">知識抽出</span></span>
             </div>
         </section>
 
@@ -119,11 +120,11 @@
                     <div class="timeline-content">
                         <p class="timeline-affiliation">
                             <span class="lang-en">Yokohama National University</span>
-                            <span class="lang-jp">横浜国立大学 大学院</span>
+                            <span class="lang-jp">横浜国立大学 大学院 環境情報学府</span>
                         </p>
                         <p class="timeline-detail">
-                            <span class="lang-en">First-year Master's student</span>
-                            <span class="lang-jp">修士課程1年</span>
+                            <span class="lang-en">Master of Informatics</span>
+                            <span class="lang-jp">修士（情報学）</span>
                         </p>
                     </div>
                 </div>
@@ -135,10 +136,10 @@
                     <div class="timeline-content">
                         <p class="timeline-affiliation">
                             <span class="lang-en">Yokohama National University</span>
-                            <span class="lang-jp">横浜国立大学</span>
+                            <span class="lang-jp">横浜国立大学 理工学部</span>
                         </p>
                         <p class="timeline-detail">
-                            <span class="lang-en">Bachelor’s Degree</span>
+                            <span class="lang-en">Bachelor of Engineering</span>
                             <span class="lang-jp">学士（工学）</span>
                         </p>
                     </div>

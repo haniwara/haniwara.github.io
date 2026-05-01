@@ -1,31 +1,35 @@
-// ページが読み込まれたら実行
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleBtn = document.getElementById('lang-toggle');
-    const langLabel = document.getElementById('lang-label');
-    
-    // 現在の言語状態 (初期値: English)
-    let currentLang = 'en';
+document.addEventListener("DOMContentLoaded", () => {
+    const languageButtons = document.querySelectorAll("[data-lang]");
+    const languageBlocks = {
+        en: document.querySelectorAll(".lang-en"),
+        jp: document.querySelectorAll(".lang-jp"),
+    };
 
-    toggleBtn.addEventListener('click', () => {
-        // 言語を切り替え
-        currentLang = currentLang === 'en' ? 'jp' : 'en';
-        updateLanguage();
+    function setLanguage(language) {
+        const isJapanese = language === "jp";
+
+        document.documentElement.lang = isJapanese ? "ja" : "en";
+
+        languageBlocks.en.forEach((element) => {
+            element.style.display = isJapanese ? "none" : "inline";
+        });
+
+        languageBlocks.jp.forEach((element) => {
+            element.style.display = isJapanese ? "inline" : "none";
+        });
+
+        languageButtons.forEach((button) => {
+            const isActive = button.dataset.lang === language;
+            button.classList.toggle("is-active", isActive);
+            button.setAttribute("aria-pressed", String(isActive));
+        });
+    }
+
+    languageButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            setLanguage(button.dataset.lang);
+        });
     });
 
-    function updateLanguage() {
-        const enElements = document.querySelectorAll('.lang-en');
-        const jpElements = document.querySelectorAll('.lang-jp');
-
-        if (currentLang === 'jp') {
-            // 日本語モード
-            enElements.forEach(el => el.style.display = 'none');
-            jpElements.forEach(el => el.style.display = 'inline');
-            langLabel.textContent = 'English'; // ボタンの文字は「英語に戻す」という意味でEN
-        } else {
-            // 英語モード
-            enElements.forEach(el => el.style.display = 'inline');
-            jpElements.forEach(el => el.style.display = 'none');
-            langLabel.textContent = '日本語'; // ボタンの文字は「日本語にする」という意味でJP
-        }
-    }
+    setLanguage("en");
 });
