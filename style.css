@@ -271,6 +271,16 @@ html[lang="ja"] .jp-affiliation-spacer {
     border-radius: var(--radius);
 }
 
+.social-icons img {
+    width: 1em;
+    height: 1em;
+    display: block;
+}
+
+.social-icons a:hover img {
+    filter: invert(1);
+}
+
 .social-icons a:hover {
     background: var(--ink);
     color: var(--bg);
